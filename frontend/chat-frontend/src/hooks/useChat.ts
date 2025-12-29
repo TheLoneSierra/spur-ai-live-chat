@@ -3,6 +3,7 @@ import type { Message } from "../types/chat";
 
 const BACKEND_URL =
   import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+  console.log("BACKEND_URL (frontend):", BACKEND_URL);
 
 export function useChat() {
   const [messages, setMessages] = useState<Message[]>([
